@@ -5,7 +5,7 @@
 
 .jumbotron-modify {
   height: 165px;
-  margin-bottom: 15px;
+  margin-bottom:0;
   background-color: #FF5F5F;
 }
 
@@ -19,7 +19,8 @@
 }
 
 .search {
-  padding-bottom:15px;
+  padding:15px 0;
+  background-color: #fff;
   p {
     margin: 5px;
   }
@@ -32,23 +33,14 @@
 .slider {
   width: 100% !important;
 }
-.infos{
-  background-color: #F6F6F6;
-
-}
 
 .info {
   padding:0 0 10px 0 ;
   background-color: #fff;
   margin: 15px 0;
   border-radius: 5px;
-  span {
-    margin-left: 5px;
-  }
-  p, span {
-    font-size: 10px;
-    line-height: 0.8;
-  }
+
+
 }
 
 .info-image img {
@@ -60,44 +52,49 @@
 }
 
 .flexmodify {
-  /*display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;*/
   margin: 10px -10px;
 }
 
-.infomypic {
+.info-mypic {
   img{
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 }
 
-.infoeval {
+.info-eval {
   display: block;
   margin-left: -5px;
-  margin-top: 10px;
+  margin-top: 8px;
+  span {
+    margin-left: 5px;
+  }
   i {
     color: #F7B952;
   }
   p {
     font-size: 14px;
     font-weight: lighter;
+    line-height: 0.8;
+  }
+   span {
+    font-size: 10px;
+    line-height: 0.8;
+  }
+}
+.info-tag{
+  i,span{
+    font-size: 12px;
   }
 }
 
-.infoflag {
-  margin-top: 10px;
+.info-flag {
+  margin-top: 8px;
   img {
     width: 30px;
     height: 20px;
   }
 }
-.moneyred{
-    color: #F96366;
-}
+
+
 

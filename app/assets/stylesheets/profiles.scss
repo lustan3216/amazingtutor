@@ -1,3 +1,120 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//~~~~~~~~~~~~~~~~~這裡的info寫在welcome~~~~~~~~~~~~~~~~~~~~
+.info-content{
+  margin-top:10px;
+  a{
+    font-size:12px;
+    text-decoration: none;
+  }
+  p{
+    font-size:14px;
+  }
+}
+//~~~~~~~~~~~~~~~~~這裡的infos寫在welcome.scss~~~~~~~~~~~~~~~~~~~~
+.trial{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px 0;
+  margin:-5px 15px 10px 15px;
+  h5{
+    line-height:0.9;
+  }
+  p{
+    font-size:10px;
+    line-height: 0.6;
+  }
+  button{
+    width: 100%;
+  }
+}
+
+.private{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px 0;
+  margin:0 15px;
+  button{
+    width: 100%;
+  }
+  p{
+    font-size:10px;
+    line-height: 0.6;
+  }
+}
+
+.private-head{
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.private-money{
+  padding:6px 0;
+  h6{
+    line-height:2;
+  }
+}
+.schedule{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px 0;
+  margin:15px;
+  img{
+    width: 100%;
+  }
+}
+.schedule-head{
+  margin:0;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.background{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px 0;
+  margin:0 15px;
+  p{
+    font-size:10px;
+
+  }
+}
+.background-head{
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.background-content{
+  margin:5px 0;
+}
+
+.rating{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px 0;
+  margin:15px;
+  img{
+    width: 30px;
+    height:auto;
+  }
+  i{
+    color: #F7B952;
+  }
+}
+.rating-head{
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.rating-content{
+  margin-top:10px;
+  p,span{
+    font-size:10px;
+  }
+}
+.rating-comment{
+  margin-top:8px;
+}
