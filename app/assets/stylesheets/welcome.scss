@@ -1,0 +1,103 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.jumbotron-modify {
+  height: 165px;
+  margin-bottom: 15px;
+  background-color: #FF5F5F;
+}
+
+.jumbotron-modify p {
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.jumbotron-modify p, h2 {
+  color: #fff;
+}
+
+.search {
+  padding-bottom:15px;
+  p {
+    margin: 5px;
+  }
+}
+
+.slider-track, .slider-selection {
+  background-image: linear-gradient(to bottom, #ED5659, #ED5659);
+}
+
+.slider {
+  width: 100% !important;
+}
+.infos{
+  background-color: #F6F6F6;
+
+}
+
+.info {
+  padding:0 0 10px 0 ;
+  background-color: #fff;
+  margin: 15px 0;
+  border-radius: 5px;
+  span {
+    margin-left: 5px;
+  }
+  p, span {
+    font-size: 10px;
+    line-height: 0.8;
+  }
+}
+
+.info-image img {
+  background: image-url("baby.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.flexmodify {
+  /*display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;*/
+  margin: 10px -10px;
+}
+
+.infomypic {
+  img{
+    width: 60px;
+    height: auto;
+  }
+}
+
+.infoeval {
+  display: block;
+  margin-left: -5px;
+  margin-top: 10px;
+  i {
+    color: #F7B952;
+  }
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
+
+.infoflag {
+  margin-top: 10px;
+  img {
+    width: 30px;
+    height: 20px;
+  }
+}
+.moneyred{
+    color: #F96366;
+}
+

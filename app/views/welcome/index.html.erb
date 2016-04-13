@@ -1,0 +1,102 @@
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".js-example-basic-single").select2();
+    $("#priceslide").slider();
+  });
+
+</script>
+
+<nav class="navbar navbar-default nav-modify">
+  <div class="container-fluid nav-relative">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header brand-center">
+      <a class="navbar-brand" href="#"><span>Amazing</span><span>tutor</span></a>
+    </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron jumbotron-modify">
+  <div class="container">
+    <div class="text-center">
+      <h2>Find a Chinese Tutor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquam amet animi architecto atque
+        autem dignissimos dolor eaque fuga fugiat laudantium modi neque </p>
+    </div>
+  </div>
+</div>
+<div class="search clearfix">
+  <div class="container">
+    <p>Tutor Speaks</p>
+    <select class="js-example-basic-single" style="width: 100%">
+      <option value="AL">Alabama</option>
+      <option value="WY">Wyoming</option>
+    </select>
+    <p>Availability</p>
+    <select class="js-example-basic-single" style="width: 100%">
+      <option value="AL">Alabama</option>
+      <option value="WY">Wyoming</option>
+    </select>
+    <p>Price</p>
+
+    <input id="priceslide" type="text" class="priceslide" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" style="width:100% !important"/>
+
+  </div>
+</div>
+<div class="infos">
+  <div class="container">
+    <div class="info col-xs-12">
+      <div class="info-image img-responsive center-block">
+        <%= image_tag("baby.png") %>
+      </div>
+      <div class="col-xs-12 clearfix flexmodify">
+
+
+          <div class="infomypic col-xs-3 pull-left">
+            <%= image_tag("oval155.png") %>
+          </div>
+
+          <div class="infoeval col-xs-7">
+            <p>Abner Chao</p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><span>(132)</span>
+          </div>
+
+          <div class=" col-xs-2 infoflag">
+            <%= image_tag("flag.png") %>
+          </div>
+
+
+      </div>
+
+
+      <div class="col-xs-12 clearfix">
+        <i class="fa fa-comment-o"></i><span>Speak </span><span>Chinese,English</span><br>
+        <i class="fa fa-usd"></i> <span>Rate </span><span class="moneyred">400-650TW/hour</span><br>
+        <i class="fa fa-rss"></i><span>Trial </span><span>Yes</span>
+      </div>
+    </div>
+  </div>
+</div>

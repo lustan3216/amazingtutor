@@ -1,0 +1,32 @@
+*{
+  font-family: Helvetica;
+  font-weight: 100;
+}
+.nav-modify {
+  margin-bottom: -20px;
+  background-color: #C73C3C;
+}
+
+.navbar-default {
+  border-color: #C73C3C;
+}
+
+.nav-modify span:nth-child(1) {
+  color: #FF5F5F;
+  font-size: 17px;
+}
+
+.nav-modify span:nth-child(2) {
+  color: #fff;
+  font-size: 17px;
+}
+
+.nav-relative {
+  position: relative;
+}
+
+.brand-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-40%);
+}
