@@ -3,7 +3,6 @@
     $(".js-example-basic-single").select2();
     $("#priceslide").slider();
   });
-
 </script>
 
 <nav class="navbar navbar-default nav-modify">
@@ -39,6 +38,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
 <div class="jumbotron jumbotron-modify">
   <div class="container">
     <div class="text-center">
@@ -48,6 +49,8 @@
     </div>
   </div>
 </div>
+
+
 <div class="search clearfix">
   <div class="container">
     <p>Tutor Speaks</p>
@@ -61,11 +64,11 @@
       <option value="WY">Wyoming</option>
     </select>
     <p>Price</p>
-
     <input id="priceslide" type="text" class="priceslide" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" style="width:100% !important"/>
-
   </div>
 </div>
+
+
 <div class="infos">
   <div class="container">
     <div class="info col-xs-12">
@@ -73,25 +76,17 @@
         <%= image_tag("baby.png") %>
       </div>
       <div class="col-xs-12 clearfix flexmodify">
-
-
-          <div class="infomypic col-xs-3 pull-left">
-            <%= image_tag("oval155.png") %>
-          </div>
-
-          <div class="infoeval col-xs-7">
-            <p>Abner Chao</p>
-            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><span>(132)</span>
-          </div>
-
-          <div class=" col-xs-2 infoflag">
-            <%= image_tag("flag.png") %>
-          </div>
-
-
+        <div class="infomypic col-xs-3 pull-left">
+          <%= image_tag("oval155.png") %>
+        </div>
+        <div class="infoeval col-xs-7">
+          <p>Abner Chao</p>
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><span>(132)</span>
+        </div>
+        <div class=" col-xs-2 infoflag">
+          <%= image_tag("flag.png") %>
+        </div>
       </div>
-
-
       <div class="col-xs-12 clearfix">
         <i class="fa fa-comment-o"></i><span>Speak </span><span>Chinese,English</span><br>
         <i class="fa fa-usd"></i> <span>Rate </span><span class="moneyred">400-650TW/hour</span><br>
