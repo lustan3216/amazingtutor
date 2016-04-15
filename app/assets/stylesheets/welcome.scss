@@ -1,100 +1,85 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 .jumbotron-modify {
-  height: 165px;
-  margin-bottom:0;
-  background-color: #FF5F5F;
+    height: 165px;
+    margin-bottom: 0;
+    background-color: #FF5F5F;
 }
-
 .jumbotron-modify p {
-  font-size: 12px;
-  margin: 0 10px;
-}
-
-.jumbotron-modify p, h2 {
-  color: #fff;
-}
-
-.search {
-  padding:15px 0;
-  background-color: #fff;
-  p {
-    margin: 5px;
-  }
-}
-
-.slider-track, .slider-selection {
-  background-image: linear-gradient(to bottom, #ED5659, #ED5659);
-}
-
-.slider {
-  width: 100% !important;
-}
-
-.info {
-  padding:0 0 10px 0 ;
-  background-color: #fff;
-  margin: 15px 0;
-  border-radius: 5px;
-
-
-}
-
-.info-image img {
-  background: image-url("baby.png");
-  -webkit-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-
-.flexmodify {
-  margin: 10px -10px;
-}
-
-.info-mypic {
-  img{
-    width: 50px;
-    height: auto;
-  }
-}
-
-.info-eval {
-  display: block;
-  margin-left: -5px;
-  margin-top: 8px;
-  span {
-    margin-left: 5px;
-  }
-  i {
-    color: #F7B952;
-  }
-  p {
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 0.8;
-  }
-   span {
-    font-size: 10px;
-    line-height: 0.8;
-  }
-}
-.info-tag{
-  i,span{
     font-size: 12px;
-  }
+    margin: 0 10px;
 }
-
+.jumbotron-modify p,
+h2 {
+    color: #fff;
+}
+.search {
+    padding: 15px 0;
+    background-color: #fff;
+    p {
+        margin: 5px;
+    }
+}
+.slider-selection,
+.slider-track {
+    background-image: linear-gradient(to bottom, #ED5659, #ED5659);
+}
+.slider {
+    width: 100% !important;
+}
+.info {
+    padding: 0 0 10px;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.info-image img {
+    background: image-url("baby.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.flexmodify {
+    margin: 10px -10px;
+}
+.info-mypic {
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+.info-eval {
+    display: block;
+    margin-left: -5px;
+    margin-top: 8px;
+    span {
+        margin-left: 5px;
+    }
+    i {
+        color: #F7B952;
+    }
+    p {
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 0.8;
+    }
+    span {
+        font-size: 10px;
+        line-height: 0.8;
+    }
+}
+.info-tag {
+    i,
+    span {
+        font-size: 12px;
+    }
+}
 .info-flag {
-  margin-top: 8px;
-  img {
-    width: 30px;
-    height: 20px;
-  }
+    margin-top: 8px;
+    img {
+        width: 30px;
+        height: 20px;
+    }
 }
-
-
-

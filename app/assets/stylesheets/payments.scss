@@ -1,0 +1,122 @@
+// Place all the styles related to the payments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.payments-head {
+    top: 50px;
+    margin-top: 30px;
+}
+.payment {
+    padding: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    & > p {
+        color: #7C7C7C;
+        font-size: 19px;
+        margin: 25px 0 0 50px;
+        font-weight: 100;
+    }
+}
+.payment-radio {
+    margin: 25px 50px;
+    label {
+        margin-left: 20px;
+    }
+    span {
+        margin-left: 30px;
+    }
+    p {
+        color: #7C7C7C;
+        font-size: 12px;
+    }
+}
+.payment-radio {
+    label {
+        margin-bottom: -5px;
+    }
+}
+.payment-money {
+    background-color: #FC6063;
+    height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    span {
+        font-size: 18px;
+        color: #fff;
+        font-weight: lighter;
+        line-height: 50px;
+        position: relative;
+    }
+}
+.regular-radio {
+    display: none;
+}
+.regular-radio + label {
+    -webkit-appearance: none;
+    border: 2px solid #9B9B9B;
+    padding: 8px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+.regular-radio:checked + label:after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: #5DA80A;
+    text-shadow: 0;
+    top: -2px;
+    left: -2px;
+    font-size: 32px;
+}
+.regular-radio:checked + label {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 2px solid #9B9B9B;
+}
+.payment-info {
+    padding: 0;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    label {
+        font-size: 14px;
+        font-weight: lighter;
+        color: #7C7C7C;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .form-group {
+        margin-top: 20px;
+    }
+    button {
+        margin: 20px 0;
+        background-color: #1FB45E;
+        height: 55px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: lighter;
+        vertical-align: middle;
+        i {
+            margin-right: 10px;
+            transform: translateY(10%);
+        }
+    }
+}
+.paypal {
+    text-align: center;
+    margin-bottom: 20px;
+    button {
+        height: 55px;
+        background-color: #FDFDFD;
+    }
+    p {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    i {
+        margin-left: 20px;
+    }
+}

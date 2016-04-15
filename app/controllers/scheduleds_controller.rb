@@ -1,0 +1,2 @@
+class ScheduledsController < ApplicationController
+end
