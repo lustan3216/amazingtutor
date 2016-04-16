@@ -1,3 +1,80 @@
 // Place all the styles related to the scheduleds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.scheduled-head{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #6A6A6A;
+  h3{
+    font-weight: lighter;
+    line-height: 0.8;
+    margin-top: 10px;
+  }
+    p{
+      line-height: 0.8;
+      font-size: 14px;
+    }
+}
+.scheduled{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 0 0 15px 0;
+}
+.scheduled-image{
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .scheduled-dark{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 2;
+    position: absolute;
+  }
+  .scheduled-white{
+    z-index: 1;
+  }
+  .scheduled-text{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%,-45%);
+
+    h1{
+      font-weight: lighter;
+        line-height: 0.6;
+    }
+    h5{
+      color: #2ECEAC;
+      line-height: 0.6;
+    }
+    h6{
+      color:#fff;
+    line-height: 2;
+    }
+  }
+}
+
+.scheduled-session{
+  text-align: right;
+  p{
+    margin: 0;
+    line-height: 0.8;
+    color: #6A6A6A;
+  }
+}

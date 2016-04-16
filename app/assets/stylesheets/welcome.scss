@@ -4,6 +4,7 @@
 .jumbotron-modify {
     height: 165px;
     margin-bottom: 0;
+    padding-top: 10px;
     background-color: #FF5F5F;
 }
 .jumbotron-modify p {
@@ -19,17 +20,24 @@ h2 {
     background-color: #fff;
     p {
         margin: 5px;
+        color: #898989;
     }
 }
-.slider-selection,
-.slider-track {
+.slider-selection,.slider-track,.round {
     background-image: linear-gradient(to bottom, #ED5659, #ED5659);
 }
 .slider {
     width: 100% !important;
 }
+.slider.slider-horizontal .slider-handle{
+  margin-top: -7px;
+}
+.slider.slider-horizontal .slider-track{
+  height: 6px;
+}
+
 .info {
-    padding: 0 0 10px;
+    padding: 0 0 10px 0 ;
     background-color: #fff;
     margin-top: 15px;
     border-radius: 5px;
