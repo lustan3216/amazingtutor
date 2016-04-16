@@ -1,6 +1,6 @@
 $screen-sm-min : 768px;
 $screen-md-min : 992px;
-$screen-lg-min : 1200px;
+
 * {
     font-family: Helvetica;
     font-weight: 100;
@@ -39,12 +39,21 @@ body {
     left: 50%;
     transform: translate(-40%);
 }
+// 價格錢的顏色
 .moneyred {
     color: #F96366;
 }
-// 價格錢的顏色
+
+// Small devices (tablets, 768px and up)
 @media (max-width: $screen-sm-min) {
   .container{
-    max-width: 400px;
+    // width: 400px;
   }
+}
+// Medium devices (desktops, 992px and up)
+
+@media (min-width: $screen-md-min) {
+    .container{
+
+    }
 }

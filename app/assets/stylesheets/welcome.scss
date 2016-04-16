@@ -37,7 +37,7 @@ h2 {
 }
 
 .info {
-    padding: 0 0 10px 0 ;
+    padding: 0 ;
     background-color: #fff;
     margin-top: 15px;
     border-radius: 5px;
@@ -79,6 +79,7 @@ h2 {
     }
 }
 .info-tag {
+  margin-bottom: 10px;
     i,
     span {
         font-size: 12px;
@@ -90,4 +91,28 @@ h2 {
         width: 30px;
         height: 20px;
     }
+}
+.info-pro{
+  display: none;
+}
+// Small devices (tablets, 768px and up)
+@media (max-width: $screen-sm-min) {
+
+}
+
+@media (min-width: $screen-md-min) {
+    .info-pro{
+      display: block;
+      font-size: 12px;
+    }
+    .info{
+      height: 206px;
+    .info-image img{
+        height: 206px;
+        width: 345px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+      }
+    }
+
 }

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :profiles
   resources :payments
   resources :scheduleds
-  resources :evalutions
+  resources :evaluations
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

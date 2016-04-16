@@ -1,3 +1,44 @@
 // Place all the styles related to the evaluations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.evaluation-button {
+    a {
+        font-size: 15px;
+        color: #6BB8F2;
+        margin: 30px 50px;
+        text-decoration: none;
+    }
+}
+.evaluation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #F6F6F6;
+    img {
+        width: 100px;
+        border-radius: 50%;
+    }
+    p,h4{
+      color: #8D8D8D;
+      font-weight: lighter;
+    }
+}
+.evaluation-me{
+  margin-bottom: 30px;
+  h4{
+    margin: 20px 0;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+.evaluation-comment{
+  p{
+    font-size: 10px;
+  }
+  h5{
+    line-height: 0.8;
+    margin-bottom: -10px;
+  }
+}
