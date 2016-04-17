@@ -45,15 +45,23 @@ body {
 }
 
 // Small devices (tablets, 768px and up)
-@media (max-width: $screen-sm-min) {
-  .container{
-    // width: 400px;
+
+@media (max-width: $screen-sm-min){
+  .container-fluid{
+    width: 400px;
+}
+}
+@media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+  .container-fluid{
+    width: 700px;
   }
-}
-// Medium devices (desktops, 992px and up)
-
-@media (min-width: $screen-md-min) {
-    .container{
-
+  }
+  @media (min-width: $screen-md-min){
+    .info-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 830px;
+  }
     }
-}

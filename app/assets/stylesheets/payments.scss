@@ -120,3 +120,29 @@
         margin-left: 20px;
     }
 }
+@media (max-width: $screen-sm-min){
+  .payment-info {
+    input,button,select{
+      width: 340px;
+    }
+  }
+}
+@media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+  .payment-info{
+    input,button,select{
+      width: 690px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+.payment-info{
+  margin-top: 0px;
+}
+.payment,.payment-info,.paypal{
+  width: 350px;
+}
+.payment{
+  float: right;
+}
+}

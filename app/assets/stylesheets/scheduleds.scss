@@ -69,12 +69,27 @@
     }
   }
 }
-
 .scheduled-session{
   text-align: right;
   p{
     margin: 0;
     line-height: 0.8;
     color: #6A6A6A;
+  }
+}
+
+@media (max-width: $screen-sm-min){
+
+}
+@media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+
+}
+@media (min-width: $screen-md-min) {
+  .scheduled-head{
+    width: 322px;
+    float: right;
+  }
+  .scheduled{
+    width: 486px;
   }
 }

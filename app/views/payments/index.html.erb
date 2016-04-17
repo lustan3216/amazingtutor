@@ -4,9 +4,9 @@
         <p>You're going to be fluent in no time</p>
     </div>
 </div>
-
-<!-- <div class="container-fluid"> -->
-<div class="container ">
+<div class="row">
+<div class="col-md-6">
+<div class="container-fluid">
     <div class="col-xs-12 payment">
         <p>Private tutoring</p>
         <div class="payment-radios">
@@ -44,59 +44,59 @@
         </div>
     </div>
 </div>
-
-<div class="container">
+</div>
+<div class="col-md-6">
+<div class="container-fluid">
     <div class="payment-info">
-        <div class="row">
-            <div class="container">
-                <form role="form">
+        <div class="container-fluid">
+            <form role="form">
+                <div class="form-group">
+                    <%= label_tag :name, "Name on Card" %>
+                    <br>
+                    <%= text_field :name,:name ,:class=> "form-control"%>
+                </div>
 
-                    <div class="form-group">
-                        <%= label_tag :name, "Name on Card" %>
-                        <br>
-                        <%= text_field :name,:name ,:class=> "form-control"%>
-                    </div>
+                <div class="form-group">
+                    <%= label_tag :number, "Credit card number" %>
+                    <br>
+                    <%= text_field :number,:number ,:class=> "form-control"%>
+                </div>
 
-                    <div class="form-group">
-                        <%= label_tag :number, "Credit card number" %>
-                        <br>
-                        <%= text_field :number,:number ,:class=> "form-control"%>
-                    </div>
+                <div class="form-group">
+                    <%= label_tag :month, "Month" %>
+                    <br>
+                    <%= select_tag "month", options_for_select( 1..12 ),:class=> "form-control" %>
+                </div>
 
-                    <div class="form-group">
-                        <%= label_tag :month, "Month" %>
-                        <br>
-                        <%= select_tag "month", options_for_select( 1..12 ),:class=> "form-control" %>
-                    </div>
+                <div class="form-group">
+                    <%= label_tag :year, "Year" %>
+                    <br>
+                    <%= select_tag "year", options_for_select( 1998..2020),:class=> "form-control" %>
+                </div>
 
-                    <div class="form-group">
-                        <%= label_tag :year, "Year" %>
-                        <br>
-                        <%= select_tag "year", options_for_select( 1998..2020),:class=> "form-control" %>
-                    </div>
+                <div class="form-group">
+                    <%= label_tag :cvc, "CVC" %>
+                    <br>
+                    <%= text_field :cvc,:name ,:class=> "form-control"%>
+                </div>
 
-                    <div class="form-group">
-                        <%= label_tag :cvc, "CVC" %>
-                        <br>
-                        <%= text_field :cvc,:name ,:class=> "form-control"%>
-                    </div>
-
-                    <button type="submit" class="btn btn-default form-control">
-                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-                        <span>
-                            Complete Secure Checkout</span>
-                    </button>
-                </form>
-            </div>
+                <button type="submit" class="btn btn-default form-control">
+                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    <span>
+                        Complete Secure Checkout</span>
+                </button>
+            </form>
         </div>
     </div>
 </div>
 
 <div class="paypal">
-    <div class="container">
+    <div class="container-fluid">
         <p>or</p>
         <button type="submit" class="btn btn-default form-control">
             Pay with PayPal<i class="fa fa-paypal" aria-hidden="true"></i>
         </button>
     </div>
+</div>
+</div>
 </div>

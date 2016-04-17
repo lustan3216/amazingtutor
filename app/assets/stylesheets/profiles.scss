@@ -2,22 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //~~~~~~~~~~~~~~~~~這裡的info寫在welcome~~~~~~~~~~~~~~~~~~~~
-.info-content {
-    margin-top: 10px;
-    a {
-        font-size: 12px;
-        text-decoration: none;
-    }
-    p {
-        font-size: 14px;
-    }
-}
 //~~~~~~~~~~~~~~~~~這裡的infos寫在welcome.scss~~~~~~~~~~~~~~~~~~~~
+.profile-image img {
+    background: image-url("baby.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.profile-info {
+    padding: 0;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+}
 .trial {
     background-color: #fff;
     border-radius: 5px;
     padding: 0 0 10px;
-      margin-top: 15px;
+    margin-top: 15px;
     h5 {
         line-height: 0.9;
     }
@@ -33,7 +36,7 @@
     background-color: #fff;
     border-radius: 5px;
     padding: 0 0 10px;
-      margin-top: 15px;
+    margin-top: 15px;
     button {
         width: 100%;
     }
@@ -57,7 +60,7 @@
     background-color: #fff;
     border-radius: 5px;
     padding: 0 0 10px;
-      margin-top: 15px;
+    margin-top: 15px;
     img {
         width: 100%;
     }
@@ -112,4 +115,28 @@
 }
 .rating-comment {
     margin-top: 8px;
+}
+@media (min-width: $screen-md-min) {
+    .profile-image {
+        img {
+            width: 488px;
+            height: 291px;
+        }
+    }
+    .profile-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 518px;
+        margin: 0;
+        float: right;
+    }
+    .profile-fix {
+        position: fixed;
+        left: 58%;
+        top: 52px;
+        .profile-container {
+            width: 331px;
+            float: left;
+        }
+    }
 }

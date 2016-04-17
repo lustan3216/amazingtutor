@@ -1,223 +1,226 @@
-<div class="container">
-    <div class="info col-xs-12">
-        <div class="row">
-            <div class="info-image img-responsive center-block col-sm-5">
-                <%= image_tag("baby.png") %>
-            </div>
-            <div class="col-xs-12 col-sm-7">
-                <div class="col-xs-12 clearfix flexmodify">
-                    <div class="info-mypic col-xs-3 pull-left">
-                        <%= image_tag("oval155.png") %>
+<div class="row">
+<div class="col-md-7">
+    <div class="container-fluid profile-container">
+        <div class="profile-info col-xs-12">
+            <div class="row">
+                <div class="profile-image col-sm-5 col-md-12">
+                    <%= image_tag("baby.png") %>
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-12">
+                    <div class="col-xs-12 clearfix flexmodify">
+                        <div class="info-mypic col-xs-3 pull-left">
+                            <%= image_tag("oval155.png") %>
+                        </div>
+                        <div class="info-eval col-xs-7">
+                            <p>Abner Chao</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span>(132)</span>
+                        </div>
+                        <div class=" col-xs-2 info-flag">
+                            <%= image_tag("flag.png") %>
+                        </div>
                     </div>
-                    <div class="info-eval col-xs-7">
-                        <p>Abner Chao</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <span>(132)</span>
+                    <div class="col-xs-12 clearfix info-tag">
+                        <i class="fa fa-comment-o"></i>
+                        <span>Speak
+                        </span>
+                        <span>Chinese,English</span><br>
+                        <i class="fa fa-usd"></i>
+                        <span>Rate
+                        </span>
+                        <span class="moneyred">400-650TW/hour</span><br>
+                        <i class="fa fa-rss"></i>
+                        <span>Trial
+                        </span>
+                        <span>Yes</span>
                     </div>
-                    <div class=" col-xs-2 info-flag">
-                        <%= image_tag("flag.png") %>
+                    <div class="col-xs-12 info-pro">
+                        <p>Hi! My name is Sarah, and I've been teaching English as a second language for the past 10 years. I completed my university studies in Sociology and Spanish,</p>
                     </div>
                 </div>
-                <div class="col-xs-12 clearfix info-tag">
-                    <i class="fa fa-comment-o"></i>
-                    <span>Speak
-                    </span>
-                    <span>Chinese,English</span><br>
-                    <i class="fa fa-usd"></i>
-                    <span>Rate
-                    </span>
-                    <span class="moneyred">400-650TW/hour</span><br>
-                    <i class="fa fa-rss"></i>
-                    <span>Trial
-                    </span>
-                    <span>Yes</span>
+            </div>
+        </div>
+    </div>
+    <div class="profile-fix">
+        <div class="container-fluid profile-container">
+            <div class="trial  col-xs-12">
+                <div class="col-xs-6">
+                    <h5>Trial session</h5>
+                    <p>with sarah</p>
                 </div>
-                <div class="col-xs-12 info-pro">
-                  <p>Hi! My name is Sarah, and I've been teaching English as a second language for the past 10 years. I completed my university studies in Sociology and Spanish,</p>
+                <div class="col-xs-4 col-xs-push-2 text-right">
+                    <h5 class="moneyred">200 TWD</h5>
+                    <p>20 min</p>
+                </div>
+                <div class="col-xs-12">
+                    <%= button_tag "Book Trial", :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid profile-container">
+            <div class="private col-xs-12">
+
+                <div class="col-xs-12 private-head">
+                    <h5>Private sesions</h5>
+                    <p>whith sarah</p>
+                </div>
+
+                <div class="col-xs-12 private-money">
+                    <div class="col-xs-6">
+                        <h6>1 session</h6>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h5 class="moneyred">400 TWD</h5>
+                        <p>per hour</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 private-money">
+                    <div class="col-xs-6">
+                        <h6>5 session</h6>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h5 class="moneyred">1900 TWD</h5>
+                        <p>per hour</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 private-money">
+                    <div class="col-xs-6">
+                        <h6>10 session</h6>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h5 class="moneyred">3500 TWD</h5>
+                        <p>per hour</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <%= button_tag "Book Now", :class => "btn btn-primary" %>
+                </div>
+
+                <div class="col-xs-12 text-center">
+                    <h6>Sarah usually responds
+                        <b>within 12 hours.</b>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid profile-container">
+        <div class="schedule  col-xs-12">
+            <div class="schedule-head col-xs-12">
+                <h5>Schedule</h5>
+            </div>
+            <div class="schedule-plan col-xs-12">
+                <%= image_tag("booking.png") %>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid profile-container">
+        <div class="background  col-xs-12">
+            <div class="col-xs-12 background-head">
+                <h5>Background</h5>
+            </div>
+            <div class="col-xs-12 background-content">
+                <h6 class="text-center">1994 - 2200</h6>
+                <h5>Eduation</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
+                    voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
+            </div>
+            <div class="col-xs-12 background-content">
+                <h6 class="text-center">1994 - 2200</h6>
+                <h5>Eduation</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
+                    voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
+            </div>
+            <div class="col-xs-12 background-content">
+                <h6 class="text-center">1994 - 2200</h6>
+                <h5>Eduation</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
+                    voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
+            </div>
+            <div class="col-xs-12 background-content">
+                <h6 class="text-center">1994 - 2200</h6>
+                <h5>Eduation</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
+                    voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid profile-container">
+        <div class="rating  col-xs-12">
+            <div class="rating-head col-xs-12">
+                <h5>Rating</h5>
+            </div>
+
+            <div class="rating-content col-xs-12">
+                <div class="col-xs-1">
+                    <%= image_tag("oval156.png") %>
+                </div>
+                <div class="col-xs-10 col-xs-push-1">
+                    <span>Ruben</span>
+                    <span>Mexico</span><br>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    --
+                    <span>Decemeber 9,2016</span>
+                </div>
+                <div class="col-xs-12 rating-comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque explicabo illum mollitia, ratione suscipit velit vero. Assumenda, veritatis.</p>
+                </div>
+            </div>
+            <div class="rating-content col-xs-12">
+                <div class="col-xs-1">
+                    <%= image_tag("oval156.png") %>
+                </div>
+                <div class="col-xs-10 col-xs-push-1">
+                    <span>Ruben</span>
+                    <span>Mexico</span><br>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    --
+                    <span>Decemeber 9,2016</span>
+                </div>
+                <div class="col-xs-12 rating-comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque explicabo illum mollitia, ratione sunda, veritatis.</p>
+                </div>
+            </div>
+            <div class="rating-content col-xs-12">
+                <div class="col-xs-1">
+                    <%= image_tag("oval156.png") %>
+                </div>
+                <div class="col-xs-10 col-xs-push-1">
+                    <span>Ruben</span>
+                    <span>Mexico</span><br>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    --
+                    <span>Decemeber 9,2016</span>
+                </div>
+                <div class="col-xs-12 rating-comment">
+                    <p>Lorem ipsum dolor sitg elit. Alias cum doloremque explicabo illum mollitia, ratione suscipit velit vero. Assumenda, veritatis.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container ">
-    <div class="trial  col-xs-12">
-        <div class="col-xs-6">
-            <h5>Trial session</h5>
-            <p>with sarah</p>
-        </div>
-        <div class="col-xs-4 col-xs-push-2 text-right">
-            <h5 class="moneyred">200 TWD</h5>
-            <p>20 min</p>
-        </div>
-        <div class="col-xs-12">
-            <%= button_tag "Book Trial", :class => "btn btn-primary" %>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="private col-xs-12">
-
-        <div class="col-xs-12 private-head">
-            <h5>Private sesions</h5>
-            <p>whith sarah</p>
-        </div>
-
-        <div class="col-xs-12 private-money">
-            <div class="col-xs-6">
-                <h6>1 session</h6>
-            </div>
-            <div class="col-xs-6 text-right">
-                <h5 class="moneyred">400 TWD</h5>
-                <p>per hour</p>
-            </div>
-        </div>
-        <div class="col-xs-12 private-money">
-            <div class="col-xs-6">
-                <h6>5 session</h6>
-            </div>
-            <div class="col-xs-6 text-right">
-                <h5 class="moneyred">1900 TWD</h5>
-                <p>per hour</p>
-            </div>
-        </div>
-        <div class="col-xs-12 private-money">
-            <div class="col-xs-6">
-                <h6>10 session</h6>
-            </div>
-            <div class="col-xs-6 text-right">
-                <h5 class="moneyred">3500 TWD</h5>
-                <p>per hour</p>
-            </div>
-        </div>
-
-        <div class="col-xs-12">
-            <%= button_tag "Book Now", :class => "btn btn-primary" %>
-        </div>
-
-        <div class="col-xs-12 text-center">
-            <h6>Sarah usually responds
-                <b>within 12 hours.</b>
-            </h6>
-        </div>
-
-    </div>
-</div>
-
-<div class="container">
-    <div class="schedule  col-xs-12">
-        <div class="schedule-head col-xs-12">
-            <h5>Schedule</h5>
-        </div>
-        <div class="schedule-plan col-xs-12">
-            <%= image_tag("booking.png") %>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="background  col-xs-12">
-        <div class="col-xs-12 background-head">
-            <h5>Background</h5>
-        </div>
-        <div class="col-xs-12 background-content">
-            <h6 class="text-center">1994 - 2200</h6>
-            <h5>Eduation</h5>
-            <h6>Lorem ipsum dolor sit amet.</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
-                voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
-        </div>
-        <div class="col-xs-12 background-content">
-            <h6 class="text-center">1994 - 2200</h6>
-            <h5>Eduation</h5>
-            <h6>Lorem ipsum dolor sit amet.</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
-                voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
-        </div>
-        <div class="col-xs-12 background-content">
-            <h6 class="text-center">1994 - 2200</h6>
-            <h5>Eduation</h5>
-            <h6>Lorem ipsum dolor sit amet.</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
-                voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
-        </div>
-        <div class="col-xs-12 background-content">
-            <h6 class="text-center">1994 - 2200</h6>
-            <h5>Eduation</h5>
-            <h6>Lorem ipsum dolor sit amet.</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eaque quis sed! Accusamus delectus explicabo labore magni minima possimus praesentium quae, qui quo quod reiciendis rem reprehenderit soluta suscipit veritatis, vitae
-                voluptatum. Cum deserunt distinctio dolore et facilis fugit, in incidunt iste laudantium nobis obcaecati quaerat, qui ratione, rem?</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="rating  col-xs-12">
-        <div class="rating-head col-xs-12">
-            <h5>Rating</h5>
-        </div>
-
-        <div class="rating-content col-xs-12">
-            <div class="col-xs-1">
-                <%= image_tag("oval156.png") %>
-            </div>
-            <div class="col-xs-10 col-xs-push-1">
-                <span>Ruben</span>
-                <span>Mexico</span><br>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                --
-                <span>Decemeber 9,2016</span>
-            </div>
-            <div class="col-xs-12 rating-comment">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque explicabo illum mollitia, ratione suscipit velit vero. Assumenda, veritatis.</p>
-            </div>
-        </div>
-        <div class="rating-content col-xs-12">
-            <div class="col-xs-1">
-                <%= image_tag("oval156.png") %>
-            </div>
-            <div class="col-xs-10 col-xs-push-1">
-                <span>Ruben</span>
-                <span>Mexico</span><br>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                --
-                <span>Decemeber 9,2016</span>
-            </div>
-            <div class="col-xs-12 rating-comment">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum doloremque explicabo illum mollitia, ratione sunda, veritatis.</p>
-            </div>
-        </div>
-        <div class="rating-content col-xs-12">
-            <div class="col-xs-1">
-                <%= image_tag("oval156.png") %>
-            </div>
-            <div class="col-xs-10 col-xs-push-1">
-                <span>Ruben</span>
-                <span>Mexico</span><br>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                --
-                <span>Decemeber 9,2016</span>
-            </div>
-            <div class="col-xs-12 rating-comment">
-                <p>Lorem ipsum dolor sitg elit. Alias cum doloremque explicabo illum mollitia, ratione suscipit velit vero. Assumenda, veritatis.</p>
-            </div>
-        </div>
-    </div>
 </div>
