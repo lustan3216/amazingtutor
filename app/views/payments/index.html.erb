@@ -4,51 +4,49 @@
         <p>You're going to be fluent in no time</p>
     </div>
 </div>
-<div class="row">
-<div class="col-md-6">
-<div class="container-fluid">
-    <div class="col-xs-12 payment">
-        <p>Private tutoring</p>
-        <div class="payment-radios">
-            <div class="payment-radio">
-                <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked/>
-                <label for="radio-1-1"></label>
-                <span>1 Session</span>
-            </div>
-            <div class="payment-radio">
-                <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio"/>
-                <label for="radio-1-2"></label>
-                <span>5 Session</span>
-            </div>
-            <div class="payment-radio">
-                <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio"/>
-                <label for="radio-1-3"></label>
-                <span>10 Session</span>
-            </div>
-            <div class="payment-radio">
-                <p>You'll be able to select dates and times on the next page</p>
-            </div>
-        </div>
-        <div class="col-xs-12 payment-money">
-            <div class="payment-money-container">
-                <div class="col-xs-4">
-                    <span>Total due :</span>
+<div class="row-fluid">
+    <div class="col-md-6">
+        <div class="container-fluid payment">
+            <p>Private tutoring</p>
+            <div class="payment-radios">
+                <div class="payment-radio">
+                    <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked/>
+                    <label for="radio-1-1"></label>
+                    <span>1 Session</span>
                 </div>
-                <div class="col-xs-3 col-xs-offset-2 text-right">
-                    <span>432.99</span>
+                <div class="payment-radio">
+                    <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio"/>
+                    <label for="radio-1-2"></label>
+                    <span>5 Session</span>
                 </div>
-                <div class="col-xs-2 text-left">
-                    <span>TWD</span>
+                <div class="payment-radio">
+                    <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio"/>
+                    <label for="radio-1-3"></label>
+                    <span>10 Session</span>
                 </div>
+                <div class="payment-radio">
+                    <p>You'll be able to select dates and times on the next page</p>
+                </div>
+            </div>
+            <div class="col-xs-12 payment-money">
+                <div class="payment-money-container">
+                    <div class="col-xs-4">
+                        <span>Total due :</span>
+                    </div>
+                    <div class="col-xs-3 col-xs-offset-2 text-right">
+                        <span>432.99</span>
+                    </div>
+                    <div class="col-xs-2 text-left">
+                        <span>TWD</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="container-fluid">
-    <div class="payment-info">
-        <div class="container-fluid">
+
+    <div class=" col-md-6">
+        <div class="container-fluid payment-info">
             <form role="form">
                 <div class="form-group">
                     <%= label_tag :name, "Name on Card" %>
@@ -87,16 +85,14 @@
                 </button>
             </form>
         </div>
-    </div>
-</div>
 
-<div class="paypal">
-    <div class="container-fluid">
-        <p>or</p>
-        <button type="submit" class="btn btn-default form-control">
-            Pay with PayPal<i class="fa fa-paypal" aria-hidden="true"></i>
-        </button>
+        <div class="col-xs-12 paypal">
+
+                <p>or</p>
+                <button type="submit" class="btn btn-default form-control">
+                    Pay with PayPal<i class="fa fa-paypal" aria-hidden="true"></i>
+                </button>
+
+        </div>
     </div>
-</div>
-</div>
 </div>

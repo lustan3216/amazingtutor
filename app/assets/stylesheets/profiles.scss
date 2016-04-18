@@ -116,6 +116,28 @@
 .rating-comment {
     margin-top: 8px;
 }
+@media (max-width: $screen-sm-min){
+ .profile-body-padding{
+   padding: 0;
+ }
+ .profile-container{
+  min-width: 375px;
+  max-width: 400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+}
+@media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+  .profile-container{
+    width: 700px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  }
 @media (min-width: $screen-md-min) {
     .profile-image {
         img {
