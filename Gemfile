@@ -39,7 +39,6 @@ source 'https://rubygems.org'
   # gem 'unicorn'
   # Use Capistrano for deployment
   # gem 'capistrano-rails', group: :development
-   gem 'pg'
    gem 'rails_12factor', group: :production
 
 group :development, :test do
