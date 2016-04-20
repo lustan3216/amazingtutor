@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+  gem 'sidekiq'
+  gem "mysql2"
+  gem 'capistrano-rails', :group => :development
+  gem 'capistrano-passenger', :group => :development
   gem "rails-i18n"
   gem "paperclip"
   gem 'omniauth-facebook'
@@ -52,4 +56,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
