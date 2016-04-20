@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-  gem 'pg' 
   gem 'sidekiq'
   gem "mysql2"
   gem 'capistrano-rails', :group => :development
