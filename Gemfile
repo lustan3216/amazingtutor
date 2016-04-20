@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+  gem install pg -v '0.18.4'
   gem 'sidekiq'
   gem "mysql2"
   gem 'capistrano-rails', :group => :development
