@@ -1,38 +1,37 @@
 // Place all the styles related to the scheduleds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.scheduled-head{
+.scheduled-head {
   background-color: #fff;
   border-radius: 5px;
   margin-top: 10px;
   color: #6A6A6A;
-  h3{
+  h3 {
     font-weight: lighter;
     line-height: 0.8;
     margin-top: 10px;
   }
-    p{
-      line-height: 0.8;
-      font-size: 14px;
-    }
+  p {
+    line-height: 0.8;
+    font-size: 14px;
+  }
 }
-.scheduled{
+.scheduled {
   background-color: #fff;
   border-radius: 5px;
   margin-top: 10px;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
 }
-.scheduled-image{
+.scheduled-image {
   position: relative;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  img{
+  img {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  .scheduled-dark{
+  .scheduled-dark {
     background-color: rgba(0,0,0,0.4);
     height: 100%;
     width: 100%;
@@ -43,10 +42,10 @@
     z-index: 2;
     position: absolute;
   }
-  .scheduled-white{
+  .scheduled-white {
     z-index: 1;
   }
-  .scheduled-text{
+  .scheduled-text {
     z-index: 3;
     position: absolute;
     top: 50%;
@@ -54,42 +53,76 @@
     text-align: center;
     color: #fff;
     transform: translate(-50%,-45%);
-
-    h1{
+    h1 {
       font-weight: lighter;
-        line-height: 0.6;
+      line-height: 0.6;
     }
-    h5{
+    h5 {
       color: #2ECEAC;
       line-height: 0.6;
     }
-    h6{
-      color:#fff;
-    line-height: 2;
+    h6 {
+      color: #fff;
+      line-height: 2;
     }
   }
 }
-.scheduled-session{
+.scheduled-session {
   text-align: right;
-  p{
+  p {
     margin: 0;
     line-height: 0.8;
     color: #6A6A6A;
   }
 }
-
-@media (max-width: $screen-sm-min){
-
+.scheduled {
+  .col-sm-5,
+  .col-sm-7 {
+    padding: 0;
+  }
 }
+@media (max-width: $screen-sm-min) {}
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
-
+  .scheduled{
+    padding: 0;
+  }
+  .scheduled-white {
+    img {
+      background-size: cover;
+      height: 135px;
+      width: 100%;
+      overflow: hidden;
+      border-top-right-radius :0px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+  .scheduled-text{
+    h1{
+      font-size: 22px;
+    }
+  }
+  .scheduled-dark {
+    width: 280px;
+    border-top-right-radius :0px;
+    border-bottom-left-radius: 5px;
+  }
 }
 @media (min-width: $screen-md-min) {
-  .scheduled-head{
-    width: 322px;
-    float: right;
+  .scheduled-white {
+    img {
+      width: 202px;
+      height: 137px;
+    }
+  }
+  .scheduled-text{
+    h1{
+      font-size: 22px;
+    }
+  }
+  .scheduled-dark {
+    width: 202px !important;
   }
   .scheduled{
-    width: 486px;
+    padding: 0;
   }
 }

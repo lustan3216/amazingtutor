@@ -1,7 +1,6 @@
 # config valid only for current version of Capistranoi
 `ssh-add`
 set :application, 'amazingtutor'
-
 set :repo_url, 'git@github.com:lustan3216/amazingtutor.git'
 set :deploy_to, '/home/deploy/amazingtutor'
 set :keep_releases, 5

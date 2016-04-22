@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Amazingtotur</title>
-        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-        <%= csrf_meta_tags %>
-    </head>
-    <body>
-        <nav class="navbar navbar-default nav-modify">
-            <div class="container-fluid nav-relative">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header brand-center">
-                    <%= link_to root_path , :class=>"navbar-brand" do%>
-                    <span>Amazing</span><span>tutor</span>
-                    <% end %>
-                </div>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1" style="content=" "">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MySetting
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><%= link_to "Profile" ,profiles_path%></li>
-                                <li><%= link_to "Scheduleds" , scheduleds_path%></li>
-                                <li><%= link_to "Payments" ,payments_path%></li>
-                                <li><%= link_to "Evaluation" ,evaluations_path%></li>
-                                <li role="separator" class="divider"></li>
-                                <li>
-                                    <a href="#">Separated link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <%= yield %>
+  <head>
+    <title>Amazingtotur</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      $(function () {
+        $("#rateYo").rateYo({starWidth: "15px", rating: 2, fullStar: true, normalFill: "#A0A0A0", spacing: "5px"});
+      });
+      $(function () {
+        $("#rateYo").rateYo().on("rateyo.set", function (e, data) {
+          $.ajax({
+            type: "POST",
+            url: "/evaluations",
+            dataType: 'JSON',
+            contentType: "application/json; charset=utf-8",
+            data: {
+              rating_count: data.rating
+            }
+          });
+        });
+      });
 
-    </body>
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default nav-modify">
+      <div class="container-fluid nav-relative">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header brand-center">
+          <%= link_to root_path , :class=>"navbar-brand" do%>
+          <span>Amazing</span>
+          <span>tutor</span>
+          <% end %>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1" style="content=" "">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MySetting
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile" ,profiles_path%></li>
+                <li><%= link_to "Scheduleds" , scheduleds_path%></li>
+                <li><%= link_to "Payments" ,payments_path%></li>
+                <li><%= link_to "Evaluation" ,evaluations_path%></li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <%= yield %>
+
+  </body>
 </html>
