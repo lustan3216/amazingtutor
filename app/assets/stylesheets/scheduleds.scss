@@ -4,7 +4,7 @@
 .scheduled-head {
   background-color: #fff;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #6A6A6A;
   h3 {
     font-weight: lighter;
@@ -81,9 +81,45 @@
     padding: 0;
   }
 }
-@media (max-width: $screen-sm-min) {}
+.user-list {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: left;
+  a {
+    // display: block;
+    text-decoration: none;
+    line-height: 3;
+    color: #6A6A6A;
+  }
+  i {
+    color: #6A6A6A;
+    margin: 0 10px;
+  }
+}
+.scheduled-editprofile-fix {
+  .input-group .form-control{
+    float: right;
+  }
+  .input-group {
+    width: 380px;
+  }
+}
+@media (max-width: $screen-sm-min) {
+  .scheduled-editprofile-fix {
+    .scheduled-content .input-group {
+      margin: 0;
+    }
+    .input-group {
+      width: 150px;
+    }
+  }
+  .editprofile-save button{
+    width: 100%;
+  }
+}
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
-  .scheduled{
+  .scheduled {
     padding: 0;
   }
   .scheduled-white {
@@ -92,21 +128,30 @@
       height: 135px;
       width: 100%;
       overflow: hidden;
-      border-top-right-radius :0px;
+      border-top-right-radius: 0;
       border-bottom-left-radius: 5px;
     }
   }
-  .scheduled-text{
-    h1{
+  .scheduled-text {
+    h1 {
       font-size: 22px;
     }
   }
   .scheduled-dark {
     width: 280px;
-    border-top-right-radius :0px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
   }
+    .scheduled-editprofile-fix {
+      .input-group {
+        width: 600px;
+      }
+        .input-group .form-control{
+          width: 500px;
+        }
+    }
 }
+
 @media (min-width: $screen-md-min) {
   .scheduled-white {
     img {
@@ -114,15 +159,26 @@
       height: 137px;
     }
   }
-  .scheduled-text{
-    h1{
+  .scheduled-text {
+    h1 {
       font-size: 22px;
     }
   }
   .scheduled-dark {
     width: 202px !important;
   }
-  .scheduled{
+  .scheduled {
     padding: 0;
+  }
+  .scheduled-changepassword-fix {
+    .input-group input {
+      width: 370px !important;
+      margin-left: -5px;
+    }
+  }
+  .scheduled-editprofile-fix {
+    .input-group {
+      width: 380px;
+    }
   }
 }

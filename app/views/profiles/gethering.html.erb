@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 sidebar">
+      <%= render "sidebar" %>
+    </div>
+    <div class="col-md-8">
+      <div class="public-content gethering-fix">
+        <div class="public-head">
+          <h4>添加收款方式</h4>
+        </div>
+        <h5>新增收款方式後，我們將在每月 15 日、30 日時撥款給您，並按照你設定的 收款方式。</h5>
+        <h5>
+          我們有以下幾種收款方式，您偏好喜歡哪一種呢？!</h5>
+        <table class="table">
+          <tr>
+            <th>收款方式</th>
+            <th>附加費</th>
+            <th>幣總</th>
+            <th>詳情</th>
+          </tr>
+          <tr>
+            <td><input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked/>
+              <label for="radio-1-1"></label>智付寶</td>
+            <td>智付寶提現手續費</td>
+            <td>N T D</td>
+            <td>綁定現有的智付寶帳號</td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio"/>
+              <label for="radio-1-2"></label>匯款</td>
+            <td>銀行手續費</td>
+            <td>N T D</td>
+            <td>您的銀行可能會跟您收 一定的手續費。</td>
+          </tr>
+        </table>
+      </div>
+      <div class="public-save">
+        <button type="button" name="button" class="btn btn-default">SAVE</button>
+      </div>
+    </div>
+  </div>
+</div>

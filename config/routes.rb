@@ -1,13 +1,32 @@
 Rails.application.routes.draw do
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root "welcome#index"
-  resources :profiles
+  root 'welcome#index'
+  resources :profiles do
+    collection do
+      get :setting
+      get :remark
+      get :change_password
+      get :introduce
+      get :education
+      get :youtube
+      get :calendar
+      get :price
+      get :gethering
+    end
+  end
+
   resources :payments
-  resources :scheduleds
+  resources :scheduleds do
+    collection do
+      get :classes
+      get :changepassword
+      get :feedback
+      get :editprofile
+    end
+  end
   resources :evaluations
 
   # Example of regular route:

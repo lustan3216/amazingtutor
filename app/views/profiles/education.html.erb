@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 sidebar">
+      <%= render "sidebar" %>
+    </div>
+    <div class="col-md-8">
+      <div class="public-content">
+        <div class="public-head">
+          <h4>教學經驗</h4>
+        </div>
+
+        <div class="input-group clearfix">
+          <label for="#your-input" class="pull-left">學校</label>
+          <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group clearfix">
+          <label for="#your-input" class="pull-left">科系</label>
+          <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <h6>小提醒：建議使用英文填寫，如學歷越詳細，學員能更了解教師唷!</h6>
+        <hr>
+        <h5>工作經驗</h5>
+        <div class="input-group clearfix">
+          <label for="#your-input">單位</label>
+          <input type="text" class="form-control" aria-describedby="basic-addon1">
+          <%#= f.label :one_fee %>
+          <%#= f.text_field :one_fee ,{class:"form-control", placeholder:"NT$000", "aria-describedby":basic-addon1}%>
+        </div>
+
+        <div class="input-group clearfix">
+          <label for="#your-input">描述</label>
+          <textarea class="form-control"></textarea>
+        </div>
+
+        <hr>
+        <div class="public-note">
+          <h5>小提醒：</h5>
+          <h6>小提醒：建議使用英文填寫，如工作經歷跟語言教學有關，會更吸引學員的目光唷!</h6>
+        </div>
+      </div>
+      <div class="public-save">
+        <button type="button" name="button" class="btn btn-default">SAVE</button>
+      </div>
+    </div>
+  </div>
+</div>

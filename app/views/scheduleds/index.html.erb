@@ -1,27 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-5 text-center">
-      <div class="col-xs-12 scheduled-head">
-        <div class="col-xs-4">
-          <h4>3</h4>
-          <p>Scheduled</p>
-        </div>
-        <div class="col-xs-4">
-          <h4>1</h4>
-          <p>Past</p>
-        </div>
-        <div class="col-xs-4">
-          <h4>0</h4>
-          <p>Unscheduled</p>
-        </div>
-      </div>
+      <%= render "sidebar"%>
     </div>
 
     <div class="col-md-7">
       <div class="scheduled col-xs-12">
         <div class="col-sm-5 scheduled-image img-responsive center-block">
           <div class="scheduled-dark"></div>
-          <div class="scheduled-white" >
+          <div class="scheduled-white">
             <%= image_tag("scheduled.png") %>
           </div>
           <div class="scheduled-text">

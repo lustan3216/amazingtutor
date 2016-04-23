@@ -1,0 +1,58 @@
+.scheduled-content-head {
+  margin: 15px -15px;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  h4 {
+    line-height: 35px;
+    font-size: 16px;
+    padding-left: 15px;
+    font-weight: lighter;
+  }
+}
+.editprofile-save button {
+  float: right;
+  margin: 20px 0;
+  color: #fff;
+  background-color: #FC6063;
+  width: 130px;
+  height: 40px;
+}
+.scheduled-content {
+  margin-top: 15px;
+  padding: 0 15px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  h6 {
+    font-size: 12px;
+    color: #9b9b9b;
+  }
+  .input-group input,
+  label {
+    display: inline;
+  }
+  label {
+    float: left;
+    font-weight: lighter;
+    line-height: 3;
+    margin-left: -15px;
+  }
+  .input-group .form-control{
+    margin-left: 15px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  }
+  .input-group {
+    margin: 15px 0 15px 15px;
+    textarea {
+      height: 160px;
+      width: 280px;
+      margin-left: 15px;
+      resize: none;
+    }
+  }
+}
+@media (min-width: $screen-md-min) {
+  .scheduled-content {
+    width:490x;
+  }
+}

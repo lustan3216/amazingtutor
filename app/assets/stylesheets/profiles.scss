@@ -4,161 +4,189 @@
 //~~~~~~~~~~~~~~~~~這裡的info寫在welcome~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~這裡的infos寫在welcome.scss~~~~~~~~~~~~~~~~~~~~
 .profile-image img {
-    background: image-url("baby.png");
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+  background: image-url("baby.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 .profile-info {
-    padding: 0;
-    background-color: #fff;
-    margin-top: 15px;
-    border-radius: 5px;
+  padding: 0;
+  background-color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 .trial {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 0 10px;
-    margin-top: 15px;
-    h5 {
-        line-height: 0.9;
-    }
-    p {
-        font-size: 10px;
-        line-height: 0.6;
-    }
-    button {
-        width: 100%;
-    }
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px;
+  margin-top: 15px;
+  h5 {
+    line-height: 0.9;
+  }
+  p {
+    font-size: 10px;
+    line-height: 0.6;
+  }
+  button {
+    width: 100%;
+  }
 }
 .private {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 0 10px;
-    margin-top: 15px;
-    button {
-        width: 100%;
-    }
-    p {
-        font-size: 10px;
-        line-height: 0.6;
-    }
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px;
+  margin-top: 15px;
+  button {
+    width: 100%;
+  }
+  p {
+    font-size: 10px;
+    line-height: 0.6;
+  }
 }
 .private-head {
-    background-color: #F0F0F0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .private-money {
-    padding: 6px 0;
-    h6 {
-        line-height: 2;
-    }
+  padding: 6px 0;
+  h6 {
+    line-height: 2;
+  }
 }
 .schedule {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 0 10px;
-    margin-top: 15px;
-    img {
-        width: 100%;
-    }
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px;
+  margin-top: 15px;
+  img {
+    width: 100%;
+  }
 }
 .schedule-head {
-    margin: 0;
-    background-color: #F0F0F0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  margin: 0;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .background {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 0 10px;
-    margin-top: 15px;
-    p {
-        font-size: 10px;
-    }
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px;
+  margin-top: 15px;
+  p {
+    font-size: 10px;
+  }
 }
 .background-head {
-    background-color: #F0F0F0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .background-content {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 .rating {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 0 0 10px;
-    margin-top: 15px;
-    img {
-        width: 30px;
-        height: auto;
-    }
-    i {
-        color: #F7B952;
-    }
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0 10px;
+  margin-top: 15px;
+  img {
+    width: 30px;
+    height: auto;
+  }
+  i {
+    color: #F7B952;
+  }
 }
 .rating-head {
-    background-color: #F0F0F0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  background-color: #F0F0F0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .rating-content {
-    margin-top: 10px;
-    p,
-    span {
-        font-size: 10px;
-    }
+  margin-top: 10px;
+  p,
+  span {
+    font-size: 10px;
+  }
 }
 .rating-comment {
-    margin-top: 8px;
+  margin-top: 8px;
 }
-@media (max-width: $screen-sm-min){
- .profile-body-padding{
-   padding: 0;
- }
- .profile-container{
-  min-width: 375px;
-  max-width: 400px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
- }
+.language-select-fix {
+  margin-right: 15px;
+  margin-top: -5px;
+}
+.youtube-fram{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .profile-body-padding {
+    padding: 0;
+  }
+  .profile-container {
+    min-width: 375px;
+    max-width: 400px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
-  .profile-container{
+  .profile-container {
     width: 700px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
+  .youtube-fix input{
+    width: 97%;
   }
+}
 @media (min-width: $screen-md-min) {
-    .profile-image {
-        img {
-            width: 488px;
-            height: 291px;
-        }
+  .profile-image {
+    img {
+      width: 488px;
+      height: 291px;
     }
+  }
+  .profile-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 518px;
+    margin: 0;
+    float: right;
+  }
+  .profile-fix {
+    position: fixed;
+    left: 58%;
+    top: 52px;
     .profile-container {
-        padding-right: 15px;
-        padding-left: 15px;
-        width: 518px;
-        margin: 0;
-        float: right;
+      width: 331px;
+      float: left;
     }
-    .profile-fix {
-        position: fixed;
-        left: 58%;
-        top: 52px;
-        .profile-container {
-            width: 331px;
-            float: left;
-        }
+  }
+  .gethering-fix {
+    height: 300px;
+  }
+  .youtube-fix{
+    height: 560px;
+    .col-xs-3{
+    padding-right: 0;
     }
+    input{
+      width: 96%;
+    }
+  }
+
 }

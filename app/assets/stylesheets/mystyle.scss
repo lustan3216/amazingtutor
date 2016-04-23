@@ -1,81 +1,81 @@
-$screen-sm-min : 768px;
-$screen-md-min : 992px;
-
 * {
-    font-family: Helvetica;
-    font-weight: 100;
+  font-family: Helvetica;
+  font-weight: 100;
 }
 body {
-    background-color: #F6F6F6;
+  background-color: #F6F6F6;
 }
 .nav-modify {
-    margin-bottom: 0;
-    background-color: #C73C3C;
+  margin-bottom: 0;
+  background-color: #C73C3C;
 }
 .navbar {
-    border-radius: 0;
+  border-radius: 0;
 }
 .nav-modify {
-    span:nth-child(1) {
-        color: #FF5F5F;
-        font-size: 17px;
-    }
-    span:nth-child(2) {
-        color: #fff;
-        font-size: 17px;
-    }
+  span:nth-child(1) {
+    color: #FF5F5F;
+    font-size: 17px;
+  }
+  span:nth-child(2) {
+    color: #fff;
+    font-size: 17px;
+  }
 }
 .nav-relative {
-    position: relative;
+  position: relative;
 }
 .navbar-default {
-    border-color: #C73C3C;
-}
-.navbar-default .navbar-nav > li > a {
+  border-color: #C73C3C;
+  .navbar-nav > li > a {
     color: #fff;
+  }
 }
+
 .brand-center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-40%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-40%);
 }
 // 價格錢的顏色
 .moneyred {
-    color: #F96366;
+  color: #F96366;
 }
-.rating{
-    display: inline;
-    float: left;
-    margin-top: 2px;
-    margin-left: -5px;
-}
-
-.rating-eval{
+.star-rating {
   margin: 0 auto;
   background-color: #F6F6F6 !important;
 }
 // Small devices (tablets, 768px and up)
-
-@media (max-width: $screen-sm-min){
-  .container{
+@media (max-width: $screen-sm-min) {
+  .container {
     min-width: 375px;
     max-width: 400px;
-}
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+    color: #fff;
+    font-weight: lighter;
+  }
 }
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
-  .container{
+  .container {
     width: 700px;
   }
+  .brand-center {
+    left: 9%;
   }
-  @media (min-width: $screen-md-min){
-    .info-container {
+}
+@media (min-width: $screen-md-min) {
+  .info-container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     width: 830px;
   }
-  .container{
+  .container {
     width: 830px;
   }
-    }
+  .brand-center{
+    left: 9%;
+  }
+}

@@ -106,6 +106,9 @@ h2 {
 .info-pro {
     display: none;
 }
+.info-pro-fix{
+    font-size: 12px;
+}
 // Small devices (tablets, 768px and up)
 @media (max-width: $screen-sm-min) {}
 @media (min-width: $screen-md-min) {

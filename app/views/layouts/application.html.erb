@@ -16,14 +16,19 @@
             type: "POST",
             url: "/evaluations",
             dataType: 'JSON',
-            // contentType: "application/json; charset=utf-8",
             data: {
               rating_count: data.rating
             }
           });
         });
       });
-
+      $(document).ready(function () {
+          $(".js-example-basic-single").select2();
+          $("#priceslide").slider();
+          $(".language-select").select2({
+            placeholder: "Select a language",
+          });
+      });
     </script>
   </head>
   <body>
@@ -32,8 +37,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header brand-center">
           <%= link_to root_path , :class=>"navbar-brand" do%>
-          <span>Amazing</span>
-          <span>tutor</span>
+          <span>Amazing</span><span>tutor</span>
           <% end %>
         </div>
         <div class="navbar-header">
@@ -48,13 +52,14 @@
         <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1" style="content=" "">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">Link</a>
+              <a href="#">Apply a Teacher</a>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MySetting
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
+                <li><%= link_to "Setting" ,introduce_profiles_path%></li>
                 <li><%= link_to "Profile" ,profiles_path%></li>
                 <li><%= link_to "Scheduleds" , scheduleds_path%></li>
                 <li><%= link_to "Payments" ,payments_path%></li>

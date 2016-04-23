@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 sidebar ">
+      <%= render "sidebar" %>
+    </div>
+    <div class="col-md-8">
+      <div class=" public-content">
+        <div class="public-head">
+          <h4>價格</h4>
+        </div>
+        <h5>試上課程</h5>
+        <div class="input-group clearfix">
+          <label for="#your-input" class="pull-left">體驗課</label>
+          <input type="text" class="form-control" placeholder="NT$000" aria-describedby="basic-addon1">
+        </div>
+        <h6>小提醒：如果未填寫數字為不開放體驗，如輸入0為免費體驗</h6>
+        <hr>
+        <h5>正式上課</h5>
+        <div class="input-group clearfix">
+          <label for="#your-input">單堂課</label>
+          <input type="text" class="form-control" placeholder="NT$000" aria-describedby="basic-addon1">
+          <%#= f.label :one_fee %>
+          <%#= f.text_field :one_fee ,{class:"form-control", placeholder:"NT$000", "aria-describedby":basic-addon1}%>
+        </div>
+
+        <div class="input-group clearfix">
+
+          <label for="#your-input">五堂課</label>
+          <input type="text" class="form-control" placeholder="NT$000" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group clearfix">
+
+          <label for="#your-input">十堂課</label>
+          <input type="text" class="form-control" placeholder="NT$000" aria-describedby="basic-addon1">
+        </div>
+        <hr>
+        <div class="public-note">
+          <h5>小提醒：</h5>
+          <h6>1.如ㄚ填寫未開放，如學員喜歡您的課程建議開放五-十堂課程。</h6>
+          <h6>2.每一堂學員付費，須等到正式上課並給予評價後才會列入撥款， AmazingTutor 將在每月 15, 30日撥款，匯款帳戶設定請至 收款設定</h6>
+        </div>
+      </div>
+      <div class="public-save">
+        <button type="button" name="button" class="btn btn-default">SAVE</button>
+      </div>
+    </div>
+  </div>
+</div>
