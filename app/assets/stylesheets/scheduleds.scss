@@ -98,29 +98,43 @@
   }
 }
 .scheduled-editprofile-fix {
-  .input-group .form-control{
+  .input-group{
+    width: 100%;
+  .form-control {
     float: right;
+  }}
+}
+@media (max-width: $screen-xs-min) {
+  .scheduled-text {
+    h1 {
+      font-size: 19px;
+    }
   }
-  .input-group {
-    width: 380px;
+  .scheduled-head {
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .scheduled-editprofile-fix {
+    .input-group {
+      width: 100%;
+    }
   }
 }
 @media (max-width: $screen-sm-min) {
-  .scheduled-editprofile-fix {
-    .scheduled-content .input-group {
-      margin: 0;
-    }
-    .input-group {
-      width: 150px;
-    }
-  }
-  .editprofile-save button{
+  .editprofile-save button {
     width: 100%;
   }
 }
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
   .scheduled {
     padding: 0;
+  }
+  .scheduled-editprofile-fix .input-group .form-control{
+      width: 100% !important;
   }
   .scheduled-white {
     img {
@@ -142,16 +156,24 @@
     border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
   }
-    .scheduled-editprofile-fix {
-      .input-group {
-        width: 600px;
-      }
-        .input-group .form-control{
-          width: 500px;
-        }
+  .scheduled-editprofile-fix {
+    .input-group {
+      width: 600px;
     }
+    .input-group .form-control {
+      width: 500px;
+    }
+  }
+  .scheduled-changepassword-fix {
+    .input-group{
+      width: 100%;
+      .form-control{
+        float: right;
+        width: 400px;
+        margin-right: 60px;
+      }
+    }}
 }
-
 @media (min-width: $screen-md-min) {
   .scheduled-white {
     img {
@@ -171,9 +193,10 @@
     padding: 0;
   }
   .scheduled-changepassword-fix {
-    .input-group input {
+    .input-group .form-control {
       width: 370px !important;
       margin-left: -5px;
+
     }
   }
   .scheduled-editprofile-fix {

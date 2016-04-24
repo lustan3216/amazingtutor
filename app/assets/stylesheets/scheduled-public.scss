@@ -38,7 +38,7 @@
     margin-left: -15px;
   }
   .input-group .form-control{
-    margin-left: 15px;
+    margin:0 15px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
   }
   .input-group {
@@ -49,6 +49,12 @@
       margin-left: 15px;
       resize: none;
     }
+  }
+}
+@media (max-width: $screen-xs-min) {
+  .input-group .form-control{
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (min-width: $screen-md-min) {
