@@ -23,21 +23,20 @@
         });
       });
       $(document).ready(function () {
-          $(".js-example-basic-single").select2();
-          $("#priceslide").slider();
-          $(".language-select").select2({
-            placeholder: "Select a language",
-          });
+        $(".js-example-basic-single").select2();
+        $("#priceslide").slider();
+        $(".language-select").select2({placeholder: "Select a language"});
       });
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-default nav-modify">
+    <nav class="navbar navbar-default nav-modify navbar-fixed-top">
       <div class="container nav-relative">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header brand-center">
           <%= link_to root_path , :class=>"navbar-brand" do%>
-          <span>Amazing</span><span>tutor</span>
+          <span>Amazing</span>
+          <span>tutor</span>
           <% end %>
         </div>
         <div class="navbar-header">
@@ -76,7 +75,8 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <%= yield %>
-
+    <div class="nav-top">
+      <%= yield %>
+      </div>
   </body>
 </html>

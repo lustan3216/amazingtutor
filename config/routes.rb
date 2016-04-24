@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get :change_password
       get :introduce
       get :education
+      get :ios_background
       get :youtube
       get :calendar
       get :price

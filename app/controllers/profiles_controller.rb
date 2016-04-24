@@ -5,6 +5,8 @@ class ProfilesController < ApplicationController
   end
   def remark
   end
+  def ios_background
+  end
   def change_password
   end
   def introduce
