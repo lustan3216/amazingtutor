@@ -136,6 +136,12 @@ h2 {
       height: 206px;
     }
   }
+  .jumbotron-fix{
+    margin: 0 5%;
+    p,h2 {
+      text-align: center;
+    }
+  }
 }
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
   .info-pro {
