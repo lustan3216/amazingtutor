@@ -48,7 +48,7 @@ body {
 // Small devices (tablets, 768px and up)
 @media (max-width: $screen-sm-min) {
   .container {
-    min-width: 375px;
+    width: 100%;
     max-width: 400px;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a{
