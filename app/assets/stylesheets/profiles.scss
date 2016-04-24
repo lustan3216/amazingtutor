@@ -15,6 +15,22 @@
   background-color: #fff;
   margin-top: 15px;
   border-radius: 5px;
+  overflow: hidden;
+  iframe,
+  object,
+  embed{
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */
+  -webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  height: 291px;
+  width: 488px;
+  }
 }
 .trial {
   background-color: #fff;
@@ -140,8 +156,18 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .profile-info {
+    iframe,
+    object,
+    embed{
+      height: 206px;
+      max-width: 370px;
+    }}
 }
 @media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+  .profile-info{
+    height: 205px;
+  }
   .profile-container {
     width: 700px;
     padding-right: 15px;
@@ -151,6 +177,21 @@
   }
   .youtube-fix input{
     width: 97%;
+  }
+  .profile-info {
+    iframe,
+    object,
+    embed{
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    width: 295px;
+    height: 205px;
+    }
   }
 }
 @media (min-width: $screen-md-min) {

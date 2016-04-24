@@ -2,128 +2,183 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .jumbotron-modify {
-    height: 165px;
-    margin-bottom: 0;
-    padding-top: 10px;
-    background-color: #FF5F5F;
+  height: 165px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  background-color: #FF5F5F;
 }
 .jumbotron-modify p {
-    font-size: 12px;
-    margin: 0 10px;
+  font-size: 12px;
+  margin: 0 10px;
 }
 .jumbotron-modify p,
 h2 {
-    color: #fff;
+  color: #fff;
 }
 .search {
-    padding: 15px 0;
-    background-color: #fff;
-    p {
-        margin: 5px;
-        color: #898989;
-    }
+  padding: 15px 0;
+  background-color: #fff;
+  p {
+    margin: 5px;
+    color: #898989;
+  }
 }
 .round,
 .slider-selection,
 .slider-track {
-    background-image: linear-gradient(to bottom, #ED5659, #ED5659);
+  background-image: linear-gradient(to bottom, #ED5659, #ED5659);
 }
 .slider {
-    width: 100% !important;
+  width: 100% !important;
 }
 .slider.slider-horizontal .slider-handle {
-    margin-top: -7px;
+  margin-top: -7px;
 }
 .slider.slider-horizontal .slider-track {
-    height: 6px;
+  height: 6px;
 }
 .info {
-    padding: 0;
-    background-color: #fff;
-    margin-top: 15px;
-    border-radius: 5px;
+  padding: 0;
+  background-color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  embed,
+  iframe,
+  object {
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    /*ios 7 border-radius-bug */
+    -webkit-transform: rotate(0.000001deg);
+    /*mac os 10.6 safari 5 border-radius-bug */
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+  }
 }
 .info-content {
-    margin-top: 10px;
-    a {
-        font-size: 12px;
-        text-decoration: none;
-    }
-    p {
-        font-size: 14px;
-    }
+  margin-top: 10px;
+  a {
+    font-size: 12px;
+    text-decoration: none;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 .info-image img {
-    background: image-url("baby.png");
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+  background: image-url("baby.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 .flexmodify {
-    margin: 10px -10px;
+  margin: 10px -10px;
 }
 .info-mypic {
-    img {
-        width: 50px;
-        height: auto;
-    }
+  img {
+    width: 50px;
+    height: auto;
+  }
 }
 .info-eval {
-    display: block;
-    margin-left: -5px;
-    margin-top: 8px;
-    span {
-        margin-left: 5px;
-    }
-    i {
-        color: #F7B952;
-    }
-    p {
-        font-size: 14px;
-        font-weight: lighter;
-        line-height: 0.8;
-    }
-    span {
-        font-size: 10px;
-        line-height: 0.8;
-    }
+  display: block;
+  margin-left: -5px;
+  margin-top: 8px;
+  span {
+    margin-left: 5px;
+  }
+  i {
+    color: #F7B952;
+  }
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 0.8;
+  }
+  span {
+    font-size: 10px;
+    line-height: 0.8;
+  }
 }
 .info-tag {
-    margin-bottom: 10px;
-    i,
-    span {
-        font-size: 12px;
-    }
+  margin-bottom: 10px;
+  i,
+  span {
+    font-size: 12px;
+  }
 }
 .info-flag {
-    margin-top: 8px;
-    img {
-        width: 30px;
-        height: 20px;
-    }
+  margin-top: 8px;
+  img {
+    width: 30px;
+    height: 20px;
+  }
 }
 .info-pro {
-    display: none;
+  display: none;
 }
-.info-pro-fix{
-    font-size: 12px;
+.info-pro-fix {
+  font-size: 12px;
 }
 // Small devices (tablets, 768px and up)
-@media (max-width: $screen-sm-min) {}
+@media (max-width: $screen-sm-min) {
+  .info {
+    embed,
+    iframe,
+    object {
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-top-right-radius: 5px;
+      border-top-right-radius: 5px;
+      max-width: 370px;
+      width: 100%;
+      height: 206px;
+    }
+  }
+}
+@media (min-width: $screen-sm-min)and (max-width: $screen-md-min) {
+  .info-pro {
+    display: block;
+    font-size: 12px;
+  }
+  .info {
+    embed,
+    iframe,
+    object {
+      -webkit-border-bottom-left-radius: 5px;
+      -moz-border-bottom-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+        width: 320px;
+        height: 230px;
+    }
+  }
+  .flexmodify ,.info-tag,.info-pro{
+    margin: 10px 0px 10px 20px;
+  }
+}
 @media (min-width: $screen-md-min) {
-    .info-pro {
-        display: block;
-        font-size: 12px;
+  .info-pro {
+    display: block;
+    font-size: 12px;
+  }
+  .info {
+    width: 800px;
+    height: 206px;
+    embed,
+    iframe,
+    object {
+      -webkit-border-top-left-radius: 5px;
+      -moz-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+      height: 206px;
+      width: 345px;
     }
-    .info {
-        width: 800px;
-        height: 206px;
-    }
-    .info-image img {
-        height: 206px;
-        width: 345px;
-        border-bottom-left-radius: 5px;
-        border-top-right-radius: 0;
-    }
+  }
+  .info-image img {
+    height: 206px;
+    width: 345px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
 }
