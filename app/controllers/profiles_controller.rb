@@ -18,7 +18,8 @@ class ProfilesController < ApplicationController
   def calendar
   end
   def price
-
+  end
+  def booking
   end
   def gethering
   end

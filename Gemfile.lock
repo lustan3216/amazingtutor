@@ -48,6 +48,7 @@ GEM
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-select-rails (1.6.3)
     bootstrap-slider-rails (6.1.6)
       railties (>= 3.2, < 5.0)
     builder (3.2.2)
@@ -237,6 +238,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-kaminari-views
   bootstrap-sass (~> 3.3.6)
+  bootstrap-select-rails
   bootstrap-slider-rails
   byebug
   capistrano-passenger

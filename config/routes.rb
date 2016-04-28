@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       get :calendar
       get :price
       get :gethering
+      get :booking
     end
   end
 

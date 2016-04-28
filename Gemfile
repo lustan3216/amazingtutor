@@ -2,6 +2,7 @@ source 'https://rubygems.org'
   gem 'sidekiq'
 
   gem 'capistrano-rails', :group => :development
+  gem 'bootstrap-select-rails'
   gem 'capistrano-passenger', :group => :development
   gem "rails-i18n"
   gem "paperclip"

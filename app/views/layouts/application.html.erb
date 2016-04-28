@@ -6,6 +6,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
     <script>
       $(function () {
         $("#rateYo").rateYo({starWidth: "15px", rating: 2, fullStar: true, normalFill: "#A0A0A0", spacing: "5px"});
@@ -21,6 +30,9 @@
             }
           });
         });
+      });
+      $(document).ready(function () {
+        $(".selectpicker").selectpicker({});
       });
       $(document).ready(function () {
         $(".js-example-basic-single").select2();
@@ -77,6 +89,6 @@
     </nav>
     <div class="nav-top">
       <%= yield %>
-      </div>
+    </div>
   </body>
 </html>

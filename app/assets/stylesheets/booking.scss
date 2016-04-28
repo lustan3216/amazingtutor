@@ -1,0 +1,57 @@
+.booking{
+  width: 554px;
+  height: 869px;
+  position: absolute;;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  border-radius: 5px;
+}
+.calender-booking{
+  margin: 27px auto auto auto;
+  // background-color: #00f3f3;
+  height: 707px;
+  width: 481px;
+  button{
+    border: none;
+    width:128px ;
+    height:  41px;
+    color: #fff;
+    background: #FC6063;
+    font-weight: 100;
+    position: absolute;
+    right: 49px;
+    bottom: 25px;
+  }
+  h6{
+    text-align: center;
+    color: #A6A9AE;
+    font-weight: lighter;
+    font-size: 13px;
+  }
+}
+.select-list{
+  margin-top: 15px;
+  span{
+      color: #A6A9AE;
+      font-size: 14px;
+      margin-right:8px;
+  }
+  .day{
+  float: right;
+  }
+}
+.selectpicker{
+  width: 137px;
+  height: 41px;
+  position: absolute;
+  bottom: 84px;
+  left: 84px;
+}
+.booking-bg{
+   width: 100%;
+   height: 2450px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+}
