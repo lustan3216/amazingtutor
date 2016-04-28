@@ -27,6 +27,7 @@ Rails.application.routes.draw do
       get :changepassword
       get :feedback
       get :editprofile
+      get :mytutor
     end
   end
   resources :evaluations

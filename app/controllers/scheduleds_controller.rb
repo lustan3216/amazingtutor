@@ -9,4 +9,6 @@ class ScheduledsController < ApplicationController
   end
   def changepassword
   end
+  def mytutor
+  end
 end

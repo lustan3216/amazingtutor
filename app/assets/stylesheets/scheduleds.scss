@@ -98,11 +98,41 @@
   }
 }
 .scheduled-editprofile-fix {
-  .input-group{
+  .input-group {
     width: 100%;
-  .form-control {
-    float: right;
-  }}
+    .form-control {
+      float: right;
+    }
+  }
+}
+.mytutor-sort {
+  margin-top: 15px;
+  z-index: -1;
+}
+.tutor-info {
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  h5 {
+    font-weight: lighter;
+  }
+  span {
+    line-height: 2;
+  }
+  .tutor-top{
+    margin:8px 0 ;
+  }
+  button{
+  border: none;
+  width:128px ;
+  height:  41px;
+  color: #fff;
+  background: #FC6063;
+  font-weight: 100;
+  position: absolute;
+  right: 49px;
+  bottom: 25px;
+  border-radius: 5px}
 }
 @media (max-width: $screen-xs-min) {
   .scheduled-text {
@@ -121,6 +151,7 @@
   .scheduled-editprofile-fix {
     .input-group {
       width: 100%;
+      margin: 10px -10px;
     }
   }
 }
@@ -133,8 +164,8 @@
   .scheduled {
     padding: 0;
   }
-  .scheduled-editprofile-fix .input-group .form-control{
-      width: 100% !important;
+  .scheduled-editprofile-fix .input-group .form-control {
+    width: 100% !important;
   }
   .scheduled-white {
     img {
@@ -165,14 +196,15 @@
     }
   }
   .scheduled-changepassword-fix {
-    .input-group{
+    .input-group {
       width: 100%;
-      .form-control{
+      .form-control {
         float: right;
         width: 400px;
         margin-right: 60px;
       }
-    }}
+    }
+  }
 }
 @media (min-width: $screen-md-min) {
   .scheduled-white {
@@ -196,12 +228,15 @@
     .input-group .form-control {
       width: 370px !important;
       margin-left: -5px;
-
     }
   }
   .scheduled-editprofile-fix {
     .input-group {
       width: 380px;
     }
+  }
+  .tutor-info {
+    width: 455px;
+    height: 155px;
   }
 }

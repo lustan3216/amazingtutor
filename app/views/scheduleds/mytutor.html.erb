@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 text-center  col-xs-12">
+      <%= render "sidebar"%>
+    </div>
+
+    <div class="col-md-7  col-xs-12">
+      <div class="mytutor-sort">
+        <%= select({},{},options_for_select([["ALL", 3],["Scheduled", 1], ["UnScheduled", 2],["以此類推", 4]],"3"),{}, {:class=>"selectpicker show-menu-arrow" ,"data-width" =>"100%"} )%>
+      </div>
+      <div class="tutor-info">
+        <div class="col-xs-12">
+          <div class="clearfix tutor-top">
+            <div class="info-mypic col-xs-3 pull-left">
+              <%= image_tag("oval155.png") %>
+            </div>
+            <div class="info-eval col-xs-7">
+              <p>Abner Chao</p>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <span>(132)</span>
+            </div>
+            <div class=" col-xs-2 info-flag">
+              <%= image_tag("flag.png") %>
+            </div>
+          </div>
+          <div class="clearfix info-tag">
+            <i class="fa fa-comment-o"></i>
+            <span>Speak
+            </span>
+            <span>Chinese,English</span><br>
+            <i class="fa fa-usd"></i>
+            <span>Rate
+            </span>
+            <span class="moneyred">400-650 TW/hour</span><br>
+            <h5>5 UnScheduled</h5>
+            <%= button_tag "Book Now", {:class => "", :id=>"booknow" }%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="booking-bg" class="booking-bg"></div>
+<div id="booking" class="booking">
+  <div class="container-fluid">
+    <div class="calender-booking">
+      <h6>All time listed are in your local timezone</h6>
+      <div class="insert-calender"></div>
+
+      <button class="btn btn-default">Quick Book</button>
+    </div>
+    <div class="select-list">
+      <div class="row">
+        <div class="col-xs-5">
+          <div class="day">
+            <span>Day</span>
+            <%= select_day(0,{},:class=>"selectpicker show-menu-arrow" ,"data-size" =>"5.5","data-width" =>"137px") %>
+          </div>
+        </div>
+        <div class="col-xs-7">
+          <div class="time">
+            <span>Time</span>
+            <%= select({},{},options_for_select([["0000~0100", 3],["0030~0130", 1], ["0100~0200", 2],["0130~0230", 4],["以此類推", 4]],"3"),{}, {:class=>"selectpicker show-menu-arrow" ,"data-size" =>"5.5","data-width" =>"215px"} )%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
